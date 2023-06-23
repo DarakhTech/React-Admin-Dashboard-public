@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./Cards.css";
-import { cardsData } from "../../Data/Data";
+// import { cardsData } from "../../Data/Data";
 import axios from "axios";
 import Card from "../Card/Card";
 import { Space,Spin } from "antd";

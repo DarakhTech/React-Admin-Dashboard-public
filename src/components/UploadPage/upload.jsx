@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import FileUploadForm from './FileUploadForm';
 import './upload.css'
-import { Space, Spin, Typography } from 'antd';
+import { Space, Spin } from 'antd';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

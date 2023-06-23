@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./Signup.css";
-import {axios} from "axios";
+// import {axios} from "axios";
 
 const Signup = () => {
   const [username, setUsername] = useState('');

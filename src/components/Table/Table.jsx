@@ -10,26 +10,26 @@ import "./Table.css";
 import axios from "axios";
 
 import { Space,Spin } from "antd";
-function createData(name, trackingId, status) {
-  return { name, trackingId, status };
-}
+// function createData(name, trackingId, status) {
+//   return { name, trackingId, status };
+// }
 
-const rows = [
-  createData("Lasania Chiken Fri", 10,  "Approved"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-  createData("Cupcake", 10,  "Delivered"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-  createData("Big Baza Bang ", 10,  "Pending"),
-  createData("Mouth Freshner", 10,  "Approved"),
-];
+// const rows = [
+//   createData("Lasania Chiken Fri", 10,  "Approved"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+//   createData("Cupcake", 10,  "Delivered"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+//   createData("Big Baza Bang ", 10,  "Pending"),
+//   createData("Mouth Freshner", 10,  "Approved"),
+// ];
 
 
 const makeStyle=(status)=>{

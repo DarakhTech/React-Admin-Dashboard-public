@@ -8,6 +8,7 @@ const Login = () => {
 
   const handleLogin =  async (e) => {
     e.preventDefault();
+    setLoading(true)
     const response = await fetch('https://a22-server-production.up.railway.app/login', {
 			method: 'POST',
 			headers: {
@@ -28,7 +29,7 @@ const Login = () => {
       }else{
         document.location.href = '/dashboard'
       }
-
+      setLoading(false)
 		}else{
       alert(data.error)
     }

@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import { Space, Spin } from 'antd';
 import "./Updates.css";
-import { UpdatesData } from "../../Data/Data";
+// import { UpdatesData } from "../../Data/Data";
 import axios from "axios";
 
 
