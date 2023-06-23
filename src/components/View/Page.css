@@ -1,0 +1,37 @@
+.page-container {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input,
+  select {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .toast-success {
+    background-color: green;
+  }
+  
+  .toast-error {
+    background-color: red;
+  }
+  
