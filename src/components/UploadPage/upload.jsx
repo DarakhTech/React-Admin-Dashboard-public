@@ -14,7 +14,7 @@ function Upload() {
       setLoading(true)
       const token = localStorage.getItem('logintoken')
       if (token) {
-          await axios.post(`http://localhost:8000/checkToken`,{token:token})
+          await axios.post(`https://a22-server-production.up.railway.app/checkToken`,{token:token})
             .then(function (response) {
                 if(response.data.name !== "JWSInvalid"){
                   // document.location.href = '/dashboard'
@@ -40,7 +40,7 @@ function Upload() {
     
     // console.log("uploading")
     setLoading(true)
-    fetch('http://localhost:8000/api/upload', {
+    fetch('https://a22-server-production.up.railway.app/api/upload', {
       method: 'POST',
       body: formData,
     })

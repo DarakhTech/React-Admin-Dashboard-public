@@ -72,7 +72,7 @@ function Page() {
   const handleSearch = async () => {
     try {
       setLoading(true)
-      const response = await axios.post('http://localhost:8000/checkuser', { email, entryType });
+      const response = await axios.post('https://a22-server-production.up.railway.app/checkuser', { email, entryType });
       if (response.data.code === 'ok') {
         setLoading(false)
         toast.success(response.data.message);

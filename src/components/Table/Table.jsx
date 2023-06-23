@@ -61,7 +61,7 @@ export default function BasicTable() {
   useEffect(()=>{
     const func = async () => {
       setLoading(true)
-      const response = await axios.get('http://localhost:8000/getCashData');
+      const response = await axios.get('https://a22-server-production.up.railway.app/getCashData');
       // alert(response.data.data[0]._id)
       if (response.data.status === 'ok') {
         setData(response.data.data)

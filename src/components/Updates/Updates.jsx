@@ -12,7 +12,7 @@ const Updates = () => {
   useEffect(()=>{
     const func = async () => {
       setLoading(true)
-    const response = await axios.get('http://localhost:8000/countEntries');
+    const response = await axios.get('https://a22-server-production.up.railway.app/countEntries');
       if (response.data.status === 'ok') {
         setData(response.data.data)
         setLoading(false)

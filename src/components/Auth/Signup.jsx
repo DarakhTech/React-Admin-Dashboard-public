@@ -9,7 +9,7 @@ const Signup = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8000/register', {
+    const response = await fetch('https://a22-server-production.up.railway.app/register', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

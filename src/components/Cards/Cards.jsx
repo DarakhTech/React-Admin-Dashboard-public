@@ -12,7 +12,7 @@ const Cards = () => {
   useEffect(()=>{
     const func = async () => {
       setLoading(true)
-      const response = await axios.get('http://localhost:8000/countPayment');
+      const response = await axios.get('https://a22-server-production.up.railway.app/countPayment');
       // alert(response.data.data[0]._id)
       if (response.data.status === 'ok') {
         setData([

@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin =  async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8000/login', {
+    const response = await fetch('https://a22-server-production.up.railway.app/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const Login = () => {
     const AsyncFunc = async () => {
       const token = localStorage.getItem('logintoken')
       if (token) {
-          await axios.post(`http://localhost:8000/checkToken`,{token:token})
+          await axios.post(`https://a22-server-production.up.railway.app/checkToken`,{token:token})
             .then(function (response) {
                 if(response.data.name !== "JWSInvalid"){
                   // document.location.href = '/dashboard'

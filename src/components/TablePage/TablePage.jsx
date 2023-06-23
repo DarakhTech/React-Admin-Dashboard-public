@@ -83,7 +83,7 @@ const CustomTable = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:8000/dash/fetchAll'); // Replace with the actual API route
+      const response = await axios.get('https://a22-server-production.up.railway.app/dash/fetchAll'); // Replace with the actual API route
       if (response.data.status === 'ok') {
         const updatedData = response.data.data.map((item) => {
           return {
